@@ -7,8 +7,10 @@
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | David Burguete | Personal webpage">
     <meta name="author" content="David Burguete">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts Preconnect y Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
@@ -31,7 +33,7 @@
       <h1>David Burguete</h1>
 
       <!-- About Me -->
-      <section class="card">
+      <section class="card roboto-about">
         <h2>About Me</h2>
         <img src="images/profile.jpg" alt="A photo representing me">
         <p>
@@ -55,7 +57,7 @@
       </section>
 
       <!-- Web Dev Resources -->
-      <section class="card">
+      <section class="card roboto-resources">
         <h2>Web Dev Resources</h2>
         <ul>
           <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
@@ -68,7 +70,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="roboto-footer">
       <p>&copy; <span id="currentyear"></span> | David Burguete | Mexico</p>
       <p id="lastModified"></p>
     </footer>
