@@ -9,6 +9,15 @@
       content="WDD 131 – Dynamic Web Fundamentals | David Burguete | Personal webpage"
     />
     <meta name="author" content="David Burguete" />
+
+    <!-- Google Fonts (forma correcta con preconnect) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/base.css" />
     <script src="scripts/getdates.js" defer></script>
   </head>
@@ -34,31 +43,55 @@
     <main>
       <h1>David Burguete</h1>
 
+      <!-- About Me -->
       <section class="card">
         <h2>About Me</h2>
         <img src="images/profile.jpg" alt="A photo representing me" />
         <p>
-          My name is David Burguete and I am from Mexico. I have a strong interest in technology, which motivated me to study web development. I enjoy learning new things, especially languages, and I dedicate part of my time to exploring knowledge in different areas. Outside of academics, I enjoy video games, movies, and reading. My current goal is to master the tools and skills required for programming and web development.
+          My name is David Burguete and I am from Mexico. I have a strong
+          interest in technology, which motivated me to study web development. I
+          enjoy learning new things, especially languages, and I dedicate part
+          of my time to exploring knowledge in different areas. Outside of
+          academics, I enjoy video games, movies, and reading. My current goal
+          is to master the tools and skills required for programming and web
+          development.
+        </p>
+
+        <h2>My Country</h2>
+        <img src="images/mexico-flag.jpg" alt="Flag of Mexico" />
+        <p>
+          Mexico is known for its rich culture, diverse landscapes, and
+          delicious food. From ancient civilizations like the Aztecs and Mayans
+          to modern traditions, it has a deep history and heritage that I am
+          proud of.
         </p>
       </section>
 
+      <!-- Web Dev Resources -->
       <section class="card">
-      <h2>Web Dev Resources</h2>
-      <ul>
-        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
-        <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-        <li><a href="https://placehold.co/200x200" target="_blank">Image Placeholder</a></li>
-      </ul>
-    </section>
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li>
+            <a href="https://dev.to/" target="_blank">Dev.to Community</a>
+          </li>
+          <li>
+            <a href="https://www.smashingmagazine.com/" target="_blank"
+              >Smashing Magazine</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+          </li>
+          <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-      <p>
-        &copy; <span id="currentyear"></span> | David Burguete | Mexico
-      </p>
+      <p>&copy; <span id="currentyear"></span> | David Burguete | Mexico</p>
       <p id="lastModified"></p>
     </footer>
   </body>
