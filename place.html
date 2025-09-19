@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mexico</title>
+    <meta name="description" content="Weather information for Tuxtla Gutiérrez, Chiapas, Mexico.">
+    <meta name="author" content="David Burguete">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Mexico</h1>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <picture>
+                <!-- small image for mobile, large for desktop -->
+                <source srcset="images/hero-small.webp" media="(max-width:767px)" type="image/webp">
+                <source srcset="images/hero-large.webp" media="(min-width:768px)" type="image/webp">
+                <img src="images/hero-large.webp" alt="Panorámica de Tuxtla Gutiérrez" class="hero-img">
+            </picture>
+
+            <!-- Boxes -->
+            <aside class="card data-card" aria-labelledby="data-title">
+                <h2 id="data-title">Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>1,964,375 km²</dd>
+                    <dt>Population:</dt>
+                    <dd>126,000,000</dd>
+                    <dt>Capital:</dt>
+                    <dd>Ciudad de México</dd>
+                    <dt>Languages:</dt>
+                    <dd>Spanish, Indigenous Languages</dd>
+                    <dt>Currency:</dt>
+                    <dd>Peso (MXN)</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC −8 to −5 (mainly UTC −6)</dd>
+                    <dt>Calling Code:</dt>
+                    <dd>+52</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd>.mx</dd>
+                </dl>
+            </aside>
+
+            <aside class="card weather-card" aria-labelledby="weather-title">
+                <h2 id="weather-title">Weather</h2>
+
+                <!-- SVG: only mobile -->
+                <img src="images/weather-icon.svg" alt="Ícono del clima" class="weather-svg mobile-only">
+
+                <ul class="weather-list">
+                    <li><span class="label">Temperature:</span> <span id="temp">5</span></li>
+                    <li><span class="label">Wind speed:</span> <span id="wind">20</span></li>
+                    <li><span class="label">Condition:</span> <span id="condition">Cloudy</span></li>
+                    <li><span class="label">Wind chill:</span> <strong id="windchill">N/A</strong></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | David Burguete | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
