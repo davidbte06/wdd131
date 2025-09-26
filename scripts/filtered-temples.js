@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
       } else if (filter === "New") {
         filtered = temples.filter(
-          (t) => new Date(t.dedicated).getFullYear() > 2000
+          (t) => new Date(t.dedicated).getFullYear() >= 2000
         );
       } else if (filter === "Large") {
         filtered = temples.filter((t) => t.area > 90000);
