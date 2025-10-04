@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product review form to collect user feedback.">
+    <meta name="author" content="David Burguete">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+     <!-- CSS -->
+    <link rel="stylesheet" href="styles/form.css">
+    <!-- JavaScript -->
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <p>We value your feedback. Please fill out the form below.</p>
+    </header>
+
+     <main>
+        <form action="review.html" method="get">
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <select id="productName" name="product_name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+            </div>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating-group">
+                    <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 stars">☆</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">☆</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">☆</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">☆</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">☆</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="install_date" required>
+            </div>
+
+            <fieldset>
+                <legend>Which features did you find useful?</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="feature1" name="features" value="durability">
+                    <label for="feature1">Durability</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="feature2" name="features" value="ease_of_use">
+                    <label for="feature2">Ease of Use</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="feature3" name="features" value="performance">
+                    <label for="feature3">Performance</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="feature4" name="features" value="design">
+                    <label for="feature4">Design</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="reviewText">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="reviewText" name="review_text" rows="6" placeholder="Describe your experience..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="userName" name="user_name" placeholder="John Doe">
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer class="roboto-footer">
+        <p>&copy; <span id="currentyear"></span> | David Burguete | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

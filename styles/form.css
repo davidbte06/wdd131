@@ -1,0 +1,145 @@
+/* --- General Body and Font Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Header and Footer inspired by the example --- */
+header, footer {
+    background-color: #4a3f6d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.9em;
+}
+
+/* --- Main Form Container --- */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2em 2.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* --- Form Element Grouping & Spacing --- */
+.form-group {
+    margin-bottom: 1.75rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 1.75rem 0;
+}
+
+legend, label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333;
+    font-size: 1em;
+}
+
+legend {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+}
+
+.optional {
+    font-weight: normal;
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+/* --- Input, Select, Textarea Styling --- */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4a3f6d;
+    box-shadow: 0 0 0 3px rgba(74, 63, 109, 0.15);
+}
+
+/* --- Checkbox Styling --- */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+.checkbox-group label {
+    margin: 0 0 0 0.75rem;
+    font-weight: normal;
+}
+.checkbox-group input[type="checkbox"] {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.rating-group {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start; 
+}
+.rating-group input[type="radio"] {
+    display: none;
+}
+.rating-group label {
+    font-size: 2.5rem;
+    color: #757575;
+    cursor: pointer;
+    margin: 0 0.1em;
+    padding: 0;
+    transition: color 0.2s;
+}
+.rating-group input[type="radio"]:checked ~ label,
+.rating-group label:hover,
+.rating-group label:hover ~ label {
+    color: #f5b301;
+}
+
+/* --- Submit Button --- */
+input[type="submit"] {
+    background-color: #6c5ce7;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a3f6d;
+}
