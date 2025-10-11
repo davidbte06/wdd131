@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchly - Your Movie Watchlist</title>
+    <meta name="description" content="Watchly helps you discover and save your favorite movies. Create a personalized watchlist and never run out of things to watch.">
+    <meta name="author" content="David Burguete">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- JavaScript -->
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">► Watchly</a>
+            <nav>
+                <ul>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="watchlist.html">My List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Discover and save your next favorite movies.</h1>
+                <p>Never ask "what should we watch today?" again.</p>
+                <a href="explorar.html" class="btn-primary">Start Exploring</a>
+            </div>
+        </section>
+
+        <section class="how-it-works container">
+            <h2>How It Works</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>🔍 Explore</h3>
+                    <p>Browse our curated list of great films from different genres.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>➕ Add to List</h3>
+                    <p>Found something interesting? Add it to your personal watchlist with one click.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🍿 Enjoy</h3>
+                    <p>Access your list anytime and decide what to watch next.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-movies container">
+            <h2>Featured Movies</h2>
+            <div id="featured-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Watchly - Final Project</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
